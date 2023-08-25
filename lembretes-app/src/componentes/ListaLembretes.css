@@ -1,0 +1,20 @@
+.lembrete-list-card {
+  flex: 1;
+  max-width: 48%;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.lembrete-list-card h2 {
+  font-size: 1.5rem;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .lembrete-list-card {
+    max-width: 90%;
+  }
+}

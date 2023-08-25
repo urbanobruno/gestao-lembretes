@@ -1,0 +1,23 @@
+.lembrete-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lembrete-list li {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.button-delete-lembrete {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 15%; 
+  padding: 3px;
+  cursor: pointer;
+}
