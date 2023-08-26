@@ -73,6 +73,12 @@ builder.Services.AddDbContext<LembreteContext>(options => options.UseMySql(
 ));
 ```
 
+É possível descobrir a versão do seu MySQL executando o seguinte comando:
+
+```sql
+SHOW VARIABLES LIKE "%version%";
+```
+
 Inicie o servidor do back-end:
 
 Em um novo terminal, em /LembretesAPI:
