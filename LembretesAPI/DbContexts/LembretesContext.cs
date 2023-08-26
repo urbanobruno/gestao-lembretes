@@ -1,11 +1,15 @@
 using Microsoft.EntityFrameworkCore;
+using LembretesAPI.Models;
 
-
-public class LembreteContext : DbContext
+namespace LembretesAPI.Data
 {
+    public class LembreteContext : DbContext
+    {
 
-    public LembreteContext(DbContextOptions<LembreteContext> options)
-    : base(options) {}
+        public LembreteContext(DbContextOptions<LembreteContext> options)
+        : base(options) { }
 
-    public DbSet<Lembrete> Lembretes { get; set; }
+        #nullable disable
+        public virtual DbSet<Lembrete> Lembretes { get; set; }
+    }
 }

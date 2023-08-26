@@ -1,19 +1,22 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-public class Lembrete
+namespace LembretesAPI.Models
 {
-
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; set; }
-
-    public string Nome { get; set; } = string.Empty;
-    
-    private DateTime _dataLembrete;
-    public DateTime DataLembrete
+    public class Lembrete
     {
-        get { return _dataLembrete.Date; }  // Retorna apenas a parte da data
-        set { _dataLembrete = value.Date; }  // Armazena apenas a parte da data
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        public string Nome { get; set; } = string.Empty;
+
+        private DateTime _dataLembrete;
+        public DateTime DataLembrete
+        {
+            get { return _dataLembrete.Date; }  // Retorna apenas a parte da data
+            set { _dataLembrete = value.Date; }  // Armazena apenas a parte da data
+        }
     }
 }
